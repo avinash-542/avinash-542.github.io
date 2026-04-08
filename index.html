@@ -138,6 +138,27 @@
 
     .hero-content { max-width: 800px; }
 
+    .hero-photo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid rgba(37,99,235,0.5);
+      box-shadow: 0 0 0 6px rgba(37,99,235,0.12), 0 0 40px rgba(37,99,235,0.3);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .hero-photo:hover {
+      box-shadow: 0 0 0 8px rgba(37,99,235,0.2), 0 0 60px rgba(37,99,235,0.45);
+    }
+
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -876,6 +897,9 @@
   <!-- Hero -->
   <section id="hero">
     <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="profile.jpg" alt="Avinash Reddy Nuthalapati" class="hero-photo" />
+      </div>
       <div class="hero-badge">
         <span class="dot"></span>
         Available for new opportunities
